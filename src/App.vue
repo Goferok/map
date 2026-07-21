@@ -60,8 +60,8 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import maplibregl from 'maplibre-gl';
 
-const MUNICIPALITIES_URL = '/data/spb_municipalities.geojson';
-const SETTINGS_URL = '/data/municipality-settings.json';
+const MUNICIPALITIES_URL = `${import.meta.env.BASE_URL}data/spb_municipalities.geojson`;
+const SETTINGS_URL = `${import.meta.env.BASE_URL}data/municipality-settings.json`;
 const LOCAL_SETTINGS_KEY = 'district_coeff_map_settings';
 const DEFAULT_COEFFICIENT = 1;
 const DEFAULT_MIN_ESTIMATE = 300000;
