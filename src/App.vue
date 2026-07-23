@@ -30,6 +30,16 @@
       <span>Минимальная смета: {{ formatMoney(hoverInfo.minEstimate) }}</span>
     </div>
 
+    <div v-if="legendItems.length" class="legend">
+      <strong>КЭФ по районам</strong>
+      <div class="legend-items">
+        <span v-for="item in legendItems" :key="item.key">
+          <i :style="{ background: item.color }"></i>
+          {{ item.label }}
+        </span>
+      </div>
+    </div>
+
     <div v-if="isSettingsModalOpen" class="settings-modal-backdrop" @click.self="isSettingsModalOpen = false">
       <section class="settings-modal">
         <header>
@@ -42,7 +52,7 @@
 
         <div v-if="loadError" class="alert">{{ loadError }}</div>
         <p>
-          Загрузите файл `municipality-settings.json`, чтобы обновить коэффициенты, минимальные сметы и районы,
+          Загрузите файл `municipality-map-data.json`, чтобы обновить геометрию, коэффициенты, минимальные сметы и районы,
           где не работаем.
         </p>
 
@@ -57,12 +67,10 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import maplibregl from 'maplibre-gl';
 
-const MUNICIPALITIES_URL = `${import.meta.env.BASE_URL}data/spb_municipalities.geojson`;
-const SETTINGS_URL = `${import.meta.env.BASE_URL}data/municipality-settings.json`;
-const LOCAL_SETTINGS_KEY = 'district_coeff_map_settings';
+const MUNICIPALITY_MAP_DATA_URL = `${import.meta.env.BASE_URL}data/municipality-map-data.json`;
 const DEFAULT_COEFFICIENT = 1;
 const DEFAULT_MIN_ESTIMATE = 300000;
 
@@ -81,6 +89,42 @@ let map = null;
 let hoveredId = null;
 let addressMarker = null;
 
+const legendItems = computed(() => {
+  const values = new Map();
+  let hasDisabledDistricts = false;
+
+  (municipalities.value?.features || []).forEach((feature) => {
+    const id = feature.properties?._mapId;
+    const current = settings.value[id];
+    if (!current) return;
+
+    if (current.worksEnabled === false) {
+      hasDisabledDistricts = true;
+      return;
+    }
+
+    const coefficient = Number(current.productionCoefficient || DEFAULT_COEFFICIENT);
+    if (!Number.isFinite(coefficient)) return;
+    const key = coefficient.toFixed(2);
+    values.set(key, {
+      key,
+      value: coefficient,
+      label: formatCoefficient(coefficient),
+      color: getCoefficientColor(coefficient)
+    });
+  });
+
+  const items = Array.from(values.values()).sort((a, b) => a.value - b.value);
+  if (hasDisabledDistricts) {
+    items.unshift({
+      key: 'disabled',
+      value: -1,
+      label: 'Не работаем',
+      color: '#dc2626'
+    });
+  }
+  return items;
+});
 onMounted(async () => {
   await loadSettings();
   initMap();
@@ -126,10 +170,9 @@ function initMap() {
 
 async function loadMunicipalities() {
   try {
-    const response = await fetch(MUNICIPALITIES_URL);
-    if (!response.ok) throw new Error(`GeoJSON не найден: ${response.status}`);
-    const geojson = await response.json();
-    municipalities.value = ensureFeatureIds(geojson);
+    if (!municipalities.value) {
+      throw new Error('municipality-map-data.json не содержит geojson');
+    }
     ensureDefaultSettings();
 
     map.addSource('municipalities', {
@@ -172,39 +215,34 @@ async function loadMunicipalities() {
     map.on('mousemove', handleMapMouseMove);
     map.on('mouseleave', clearMunicipalityHover);
   } catch (error) {
-    loadError.value = 'Файл с границами районов не найден. Положите GeoJSON в public/data/spb_municipalities.geojson';
+    loadError.value = 'Файл data/municipality-map-data.json не найден или содержит неверный формат.';
     console.warn('[district-coeff-map] failed to load municipalities', error);
   }
 }
 
 async function loadSettings() {
-  const sharedSettings = await loadSharedSettings();
-  const localSettings = loadLocalSettings();
-  settings.value = {
-    ...sharedSettings,
-    ...localSettings
-  };
+  const mapData = await loadSharedMapData();
+  settings.value = mapData.settings;
 }
 
-async function loadSharedSettings() {
+async function loadSharedMapData() {
   try {
-    const response = await fetch(SETTINGS_URL, { cache: 'no-store' });
-    if (!response.ok) return {};
-    return normalizeSettings(await response.json());
+    const response = await fetch(MUNICIPALITY_MAP_DATA_URL, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`municipality-map-data.json не найден: ${response.status}`);
+    const payload = await response.json();
+    if (payload?.geojson?.type !== 'FeatureCollection') {
+      throw new Error('municipality-map-data.json не содержит geojson FeatureCollection');
+    }
+    municipalities.value = ensureFeatureIds(payload.geojson);
+    return {
+      settings: normalizeSettings(payload?.settings || {})
+    };
   } catch (error) {
-    console.warn('[district-coeff-map] failed to load shared settings', error);
-    return {};
+    loadError.value = 'Файл data/municipality-map-data.json не найден или содержит неверный формат.';
+    console.warn('[district-coeff-map] failed to load municipality map data', error);
+    return { settings: {} };
   }
 }
-
-function loadLocalSettings() {
-  try {
-    return normalizeSettings(JSON.parse(localStorage.getItem(LOCAL_SETTINGS_KEY) || '{}'));
-  } catch {
-    return {};
-  }
-}
-
 function ensureFeatureIds(geojson) {
   return {
     ...geojson,
@@ -234,7 +272,6 @@ function ensureDefaultSettings() {
   });
   if (changed) {
     settings.value = next;
-    persistSettings();
   }
 }
 
@@ -400,20 +437,26 @@ async function importSettings(event) {
   event.target.value = '';
   if (!file) return;
   try {
-    const imported = normalizeSettings(JSON.parse(await file.text()));
+    const parsed = JSON.parse(await file.text());
+    const imported = normalizeSettings(parsed?.settings || parsed);
     settings.value = {
       ...settings.value,
       ...imported
     };
-    persistSettings();
+
+    if (parsed?.geojson?.type === 'FeatureCollection') {
+      municipalities.value = ensureFeatureIds(parsed.geojson);
+    }
+
     syncMapData();
-    importStatus.value = `Загружено: ${Object.keys(imported).length} районов`;
+    importStatus.value = parsed?.geojson
+      ? `Загружено: ${Object.keys(imported).length} настроек и ${municipalities.value?.features?.length || 0} районов`
+      : `Загружено: ${Object.keys(imported).length} районов`;
   } catch (error) {
     loadError.value = 'Не удалось прочитать JSON с настройками районов.';
     console.warn('[district-coeff-map] failed to import settings', error);
   }
 }
-
 function normalizeSettings(payload) {
   if (!payload || typeof payload !== 'object') return {};
   const entries = Array.isArray(payload)
@@ -430,10 +473,6 @@ function normalizeSettings(payload) {
     };
     return acc;
   }, {});
-}
-
-function persistSettings() {
-  localStorage.setItem(LOCAL_SETTINGS_KEY, JSON.stringify(settings.value));
 }
 
 function getDefaultSettings(name = '') {

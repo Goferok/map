@@ -472,20 +472,22 @@ select {
 
 .legend {
   position: absolute;
-  right: 18px;
+  left: 50%;
   bottom: 18px;
-  left: 455px;
   z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
+  width: max-content;
+  max-width: calc(100vw - 36px);
   min-height: 44px;
   padding: 10px 14px;
   border: 1px solid rgba(148, 163, 184, 0.25);
   border-radius: 10px;
   background: rgba(15, 27, 48, 0.94);
   box-shadow: 0 16px 48px rgba(15, 23, 42, 0.28);
+  transform: translateX(-50%);
 }
 
 .legend strong {
@@ -576,10 +578,13 @@ select {
   }
 
   .legend {
+    left: 10px;
     right: 10px;
     bottom: 10px;
-    left: 10px;
+    width: auto;
+    max-width: none;
     flex-direction: column;
     align-items: stretch;
+    transform: none;
   }
 }
