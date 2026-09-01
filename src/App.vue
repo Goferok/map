@@ -6,6 +6,29 @@
       ⚙
     </button>
 
+    <div class="map-tools">
+      <nav class="region-switcher" aria-label="Выбор региона">
+        <button
+          v-for="region in regions"
+          :key="region.id"
+          type="button"
+          :class="{ 'region-switcher__button--active': activeRegion === region.id }"
+          @click="selectRegion(region.id)"
+        >
+          {{ region.label }}
+        </button>
+      </nav>
+
+      <button
+        class="edit-mode-button"
+        :class="{ 'edit-mode-button--active': isEditMode }"
+        type="button"
+        @click="toggleEditMode"
+      >
+        {{ isEditMode ? 'Готово' : 'Редактировать' }}
+      </button>
+    </div>
+
     <form class="address-search" @submit.prevent="searchAddress">
       <input
         v-model="addressQuery"
@@ -18,6 +41,47 @@
       </button>
       <span v-if="addressSearchError">{{ addressSearchError }}</span>
     </form>
+
+    <aside v-if="isEditMode" class="editor-panel">
+      <header>
+        <span>Режим редактирования</span>
+        <strong>{{ selectedMunicipality?.name || 'Выберите район на карте' }}</strong>
+      </header>
+
+      <template v-if="selectedMunicipality && selectedDistrictSettings">
+        <label>
+          <span>КЭФ</span>
+          <select
+            :value="selectedDistrictSettings.productionCoefficient"
+            @change="updateSelectedSettings('productionCoefficient', $event.target.value)"
+          >
+            <option v-for="coefficient in coefficientOptions" :key="coefficient" :value="coefficient">
+              {{ formatCoefficient(coefficient) }}
+            </option>
+          </select>
+        </label>
+        <label>
+          <span>Минимальная смета, ₽</span>
+          <input
+            type="number"
+            min="0"
+            step="10000"
+            :value="selectedDistrictSettings.minEstimate"
+            @input="updateSelectedSettings('minEstimate', $event.target.value)"
+          />
+        </label>
+        <label class="editor-panel__checkbox">
+          <input
+            type="checkbox"
+            :checked="selectedDistrictSettings.worksEnabled !== false"
+            @change="updateSelectedSettings('worksEnabled', $event.target.checked)"
+          />
+          <span>Работаем в районе</span>
+        </label>
+      </template>
+
+      <button type="button" class="editor-panel__export" @click="exportSettings">Скачать JSON с настройками</button>
+    </aside>
 
     <div
       v-if="hoverInfo"
@@ -71,8 +135,17 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import maplibregl from 'maplibre-gl';
 
 const MUNICIPALITY_MAP_DATA_URL = `${import.meta.env.BASE_URL}data/municipality-map-data.json`;
+const MOSCOW_DISTRICTS_URL = `${import.meta.env.BASE_URL}data/moscow-districts.geojson`;
+const MOSCOW_OBLAST_DISTRICTS_URL = `${import.meta.env.BASE_URL}data/moscow-oblast-districts.geojson`;
+const DEFAULT_SETTINGS_URL = `${import.meta.env.BASE_URL}data/default-municipality-settings.json`;
 const DEFAULT_COEFFICIENT = 1;
 const DEFAULT_MIN_ESTIMATE = 300000;
+const EDITOR_STORAGE_KEY = 'district-coeff-map-settings-v1';
+const coefficientOptions = Array.from({ length: 11 }, (_, index) => Number((1 + index * 0.05).toFixed(2)));
+const regions = [
+  { id: 'spb', label: 'СПб', bounds: [[29.4, 59.5], [31.4, 60.35]] },
+  { id: 'msk', label: 'Москва и МО', bounds: [[35.0, 54.8], [40.2, 57.1]] }
+];
 
 const mapContainer = ref(null);
 const loadError = ref('');
@@ -84,10 +157,18 @@ const hoverInfo = ref(null);
 const addressQuery = ref('');
 const addressSearchError = ref('');
 const isAddressSearching = ref(false);
+const activeRegion = ref('spb');
+const isEditMode = ref(false);
+const selectedMunicipality = ref(null);
 
 let map = null;
 let hoveredId = null;
 let addressMarker = null;
+
+const selectedDistrictSettings = computed(() => {
+  if (!selectedMunicipality.value) return null;
+  return settings.value[selectedMunicipality.value.id] || null;
+});
 
 const legendItems = computed(() => {
   const values = new Map();
@@ -214,6 +295,7 @@ async function loadMunicipalities() {
 
     map.on('mousemove', handleMapMouseMove);
     map.on('mouseleave', clearMunicipalityHover);
+    map.on('click', 'municipality-fills', selectMunicipalityForEdit);
   } catch (error) {
     loadError.value = 'Файл data/municipality-map-data.json не найден или содержит неверный формат.';
     console.warn('[district-coeff-map] failed to load municipalities', error);
@@ -222,26 +304,72 @@ async function loadMunicipalities() {
 
 async function loadSettings() {
   const mapData = await loadSharedMapData();
-  settings.value = mapData.settings;
+  settings.value = {
+    ...mapData.settings,
+    ...loadSavedSettings()
+  };
 }
 
 async function loadSharedMapData() {
   try {
-    const response = await fetch(MUNICIPALITY_MAP_DATA_URL, { cache: 'no-store' });
+    const [response, moscowGeojson, moscowOblastGeojson, defaultSettings] = await Promise.all([
+      fetch(MUNICIPALITY_MAP_DATA_URL, { cache: 'no-store' }),
+      loadGeojson(MOSCOW_DISTRICTS_URL, 'msk'),
+      loadGeojson(MOSCOW_OBLAST_DISTRICTS_URL, 'mo'),
+      loadDefaultSettings()
+    ]);
     if (!response.ok) throw new Error(`municipality-map-data.json не найден: ${response.status}`);
     const payload = await response.json();
     if (payload?.geojson?.type !== 'FeatureCollection') {
       throw new Error('municipality-map-data.json не содержит geojson FeatureCollection');
     }
-    municipalities.value = ensureFeatureIds(payload.geojson);
+    municipalities.value = ensureFeatureIds({
+      type: 'FeatureCollection',
+      features: [
+        ...(payload.geojson.features || []),
+        ...moscowGeojson.features,
+        ...moscowOblastGeojson.features
+      ]
+    });
     return {
-      settings: normalizeSettings(payload?.settings || {})
+      settings: normalizeSettings({
+        ...(payload?.settings || {}),
+        ...defaultSettings
+      })
     };
   } catch (error) {
     loadError.value = 'Файл data/municipality-map-data.json не найден или содержит неверный формат.';
     console.warn('[district-coeff-map] failed to load municipality map data', error);
     return { settings: {} };
   }
+}
+
+async function loadDefaultSettings() {
+  const response = await fetch(DEFAULT_SETTINGS_URL, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${DEFAULT_SETTINGS_URL} не найден: ${response.status}`);
+  const payload = await response.json();
+  return payload?.settings || payload || {};
+}
+
+async function loadGeojson(url, region) {
+  const response = await fetch(url, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${url} не найден: ${response.status}`);
+  const geojson = await response.json();
+  if (geojson?.type !== 'FeatureCollection') throw new Error(`${url} содержит неверный формат`);
+  return {
+    ...geojson,
+    features: (geojson.features || []).map((feature) => withRegion(feature, region))
+  };
+}
+
+function withRegion(feature, region) {
+  return {
+    ...feature,
+    properties: {
+      ...(feature.properties || {}),
+      _mapRegion: region
+    }
+  };
 }
 function ensureFeatureIds(geojson) {
   return {
@@ -300,6 +428,75 @@ function buildMapGeojson() {
 function syncMapData() {
   if (!map?.getSource('municipalities') || !municipalities.value) return;
   map.getSource('municipalities').setData(buildMapGeojson());
+}
+
+function toggleEditMode() {
+  isEditMode.value = !isEditMode.value;
+  if (!isEditMode.value) selectedMunicipality.value = null;
+}
+
+function selectMunicipalityForEdit(event) {
+  if (!isEditMode.value) return;
+  const feature = event.features?.[0];
+  if (!feature) return;
+  const properties = feature.properties || {};
+  const id = properties._mapId;
+  if (!id) return;
+  if (!settings.value[id]) {
+    settings.value = {
+      ...settings.value,
+      [id]: getDefaultSettings(getMunicipalityName(properties))
+    };
+  }
+  selectedMunicipality.value = { id, name: getMunicipalityName(properties) };
+}
+
+function updateSelectedSettings(field, value) {
+  const selected = selectedMunicipality.value;
+  if (!selected) return;
+  const current = settings.value[selected.id] || getDefaultSettings(selected.name);
+  const nextValue = field === 'worksEnabled' ? value : Number(value);
+  if (field !== 'worksEnabled' && (!Number.isFinite(nextValue) || nextValue < 0)) return;
+  settings.value = {
+    ...settings.value,
+    [selected.id]: {
+      ...current,
+      [field]: nextValue
+    }
+  };
+  persistSettings();
+  syncMapData();
+}
+
+function loadSavedSettings() {
+  try {
+    return normalizeSettings(JSON.parse(localStorage.getItem(EDITOR_STORAGE_KEY) || '{}'));
+  } catch {
+    return {};
+  }
+}
+
+function persistSettings() {
+  try {
+    localStorage.setItem(EDITOR_STORAGE_KEY, JSON.stringify(settings.value));
+  } catch (error) {
+    console.warn('[district-coeff-map] failed to save edited settings', error);
+  }
+}
+
+function exportSettings() {
+  const payload = JSON.stringify({
+    schema: 'production-municipality-map-data',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    settings: settings.value
+  }, null, 2);
+  const url = URL.createObjectURL(new Blob([payload], { type: 'application/json' }));
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'municipality-map-settings.json';
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 function getFillStyle(current) {
@@ -404,10 +601,23 @@ async function searchAddress() {
 
 function withCityHint(query) {
   const normalized = query.toLowerCase();
-  if (normalized.includes('санкт-петербург') || normalized.includes('спб') || normalized.includes('ленинградская')) {
+  if (normalized.includes('санкт-петербург') || normalized.includes('спб') || normalized.includes('ленинградская') || normalized.includes('москва') || normalized.includes('московская')) {
     return query;
   }
-  return `${query}, Санкт-Петербург`;
+  const cityHint = activeRegion.value === 'msk' ? 'Москва' : 'Санкт-Петербург';
+  return `${query}, ${cityHint}`;
+}
+
+function selectRegion(regionId) {
+  const region = regions.find((item) => item.id === regionId);
+  if (!region || !map) return;
+  activeRegion.value = region.id;
+  if (addressMarker) {
+    addressMarker.remove();
+    addressMarker = null;
+  }
+  clearMunicipalityHover();
+  map.fitBounds(region.bounds, { padding: 56, duration: 750, maxZoom: region.id === 'msk' ? 8.5 : 10 });
 }
 
 function showAddressMarker(coordinates, label) {
@@ -443,6 +653,7 @@ async function importSettings(event) {
       ...settings.value,
       ...imported
     };
+    persistSettings();
 
     if (parsed?.geojson?.type === 'FeatureCollection') {
       municipalities.value = ensureFeatureIds(parsed.geojson);
@@ -486,6 +697,9 @@ function getDefaultSettings(name = '') {
 
 function getMunicipalityId(feature, index) {
   const properties = feature.properties || {};
+  if (properties._mapRegion) {
+    return `${properties._mapRegion}-${properties.OSM_ID || properties.OSM_IDD || feature.id || index + 1}`;
+  }
   return String(properties.oktmo || properties.OKTMO || properties.id || properties.ID || feature.id || `municipality-${index + 1}`);
 }
 

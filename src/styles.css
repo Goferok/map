@@ -55,6 +55,47 @@ select {
   background: rgba(22, 40, 69, 0.98);
 }
 
+.map-tools {
+  position: absolute;
+  top: 16px;
+  right: 66px;
+  z-index: 6;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.region-switcher {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.36);
+  border-radius: 12px;
+  background: rgba(15, 27, 48, 0.94);
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.28);
+}
+
+.region-switcher button {
+  min-height: 42px;
+  padding: 0 13px;
+  border: 0;
+  border-right: 1px solid rgba(148, 163, 184, 0.22);
+  background: transparent;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.region-switcher button:last-child {
+  border-right: 0;
+}
+
+.region-switcher button:hover,
+.region-switcher__button--active {
+  background: rgba(47, 128, 237, 0.32) !important;
+  color: #fff !important;
+}
+
 .address-search {
   position: absolute;
   top: 16px;
@@ -115,6 +156,103 @@ select {
   background: rgba(127, 29, 29, 0.36);
   color: #fecaca;
   font-size: 12px;
+  font-weight: 900;
+}
+
+.edit-mode-button {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(148, 163, 184, 0.36);
+  border-radius: 12px;
+  background: rgba(15, 27, 48, 0.94);
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.28);
+  color: #eaf3ff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.edit-mode-button:hover,
+.edit-mode-button--active {
+  border-color: rgba(118, 241, 219, 0.72);
+  background: rgba(22, 99, 83, 0.95);
+}
+
+.editor-panel {
+  position: absolute;
+  top: 68px;
+  right: 16px;
+  z-index: 7;
+  display: grid;
+  gap: 12px;
+  width: min(310px, calc(100vw - 32px));
+  padding: 15px;
+  border: 1px solid rgba(118, 241, 219, 0.38);
+  border-radius: 12px;
+  background: rgba(15, 27, 48, 0.97);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.36);
+}
+
+.editor-panel header {
+  display: grid;
+  gap: 4px;
+}
+
+.editor-panel header span,
+.editor-panel label > span {
+  color: #9fb3d0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.editor-panel header strong {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.editor-panel label {
+  display: grid;
+  gap: 6px;
+}
+
+.editor-panel input[type='number'],
+.editor-panel select {
+  min-height: 40px;
+  border: 1px solid rgba(148, 163, 184, 0.36);
+  border-radius: 9px;
+  outline: none;
+  background: #08172e;
+  color: #f8fafc;
+  padding: 0 11px;
+  font: inherit;
+  font-weight: 800;
+}
+
+.editor-panel input[type='number']:focus,
+.editor-panel select:focus {
+  border-color: rgba(118, 241, 219, 0.72);
+}
+
+.editor-panel__checkbox {
+  display: flex !important;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.editor-panel__checkbox input {
+  width: 17px;
+  height: 17px;
+  accent-color: #18b7aa;
+}
+
+.editor-panel__export {
+  min-height: 40px;
+  border: 1px solid rgba(47, 128, 237, 0.65);
+  border-radius: 9px;
+  background: rgba(47, 128, 237, 0.24);
+  color: #eaf3ff;
+  cursor: pointer;
   font-weight: 900;
 }
 
@@ -563,6 +701,29 @@ select {
 
   .address-search button {
     min-height: 40px;
+  }
+
+  .edit-mode-button {
+    min-height: 40px;
+  }
+
+  .map-tools {
+    top: auto;
+    right: 10px;
+    bottom: 10px;
+    max-width: calc(100vw - 20px);
+    gap: 6px;
+  }
+
+  .region-switcher button {
+    padding: 0 10px;
+  }
+
+  .editor-panel {
+    top: auto;
+    right: 10px;
+    bottom: 62px;
+    width: min(310px, calc(100vw - 20px));
   }
 
   .map-panel {

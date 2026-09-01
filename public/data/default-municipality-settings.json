@@ -1,0 +1,2461 @@
+{
+  "schema": "production-municipality-map-data",
+  "version": 1,
+  "exportedAt": "2026-09-01T18:30:51.491Z",
+  "settings": {
+    "337423": {
+      "name": "Колпино",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "337425": {
+      "name": "Понтонный",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "337426": {
+      "name": "Сапёрный",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "337850": {
+      "name": "Металлострой",
+      "productionCoefficient": 1.15,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "337851": {
+      "name": "Усть-Ижора",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "337852": {
+      "name": "Петро-Славянка",
+      "productionCoefficient": 1.15,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "339228": {
+      "name": "округ Московская застава",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "359076": {
+      "name": "Александровская",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "359178": {
+      "name": "Тярлево",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "359179": {
+      "name": "Пушкин",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "359180": {
+      "name": "Павловск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "363092": {
+      "name": "Красное Село",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "363095": {
+      "name": "округ Горелово",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "363610": {
+      "name": "Южно-Приморский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "363611": {
+      "name": "округ Сосновая поляна",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "363612": {
+      "name": "округ Урицк",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "363613": {
+      "name": "округ Константиновское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "363614": {
+      "name": "округ Юго-Запад",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "367376": {
+      "name": "Стрельна",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "367377": {
+      "name": "Петергоф",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "367378": {
+      "name": "Ломоносов",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "368288": {
+      "name": "округ Невская застава",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369083": {
+      "name": "Народный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369084": {
+      "name": "округ № 54",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369085": {
+      "name": "Обуховский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369086": {
+      "name": "округ Рыбацкое",
+      "productionCoefficient": 1.15,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "369087": {
+      "name": "Ивановский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369515": {
+      "name": "округ Правобережный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369516": {
+      "name": "Невский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "369517": {
+      "name": "округ Оккервиль",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "391527": {
+      "name": "Полянское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "394031": {
+      "name": "Приморское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1115677": {
+      "name": "Сестрорецк",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1116469": {
+      "name": "Песочный",
+      "productionCoefficient": 1.1,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1116470": {
+      "name": "Белоостров",
+      "productionCoefficient": 1.1,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1117451": {
+      "name": "Солнечное",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1117549": {
+      "name": "Первомайское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1117550": {
+      "name": "Репино",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1117563": {
+      "name": "Комарово",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1119500": {
+      "name": "Ушково",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "1119501": {
+      "name": "Рощинское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1119502": {
+      "name": "Зеленогорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1120125": {
+      "name": "Серово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1120126": {
+      "name": "Молодёжное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1120127": {
+      "name": "Смолячково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1121516": {
+      "name": "Сенной округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1121517": {
+      "name": "округ Коломна",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1123297": {
+      "name": "Екатерингофский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1123298": {
+      "name": "округ Измайловское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1123299": {
+      "name": "округ Семёновский",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1123300": {
+      "name": "Адмиралтейский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1124718": {
+      "name": "округ Морской",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1124719": {
+      "name": "Васильевский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1124720": {
+      "name": "округ Гавань",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1124722": {
+      "name": "округ № 7",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1124723": {
+      "name": "округ Остров Декабристов",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1129907": {
+      "name": "Отрадненское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1138534": {
+      "name": "округ Сампсониевское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1180979": {
+      "name": "округ Светлановское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181028": {
+      "name": "Левашово",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "1181029": {
+      "name": "округ Сосновское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181030": {
+      "name": "округ Суздальское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181031": {
+      "name": "Парголово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181032": {
+      "name": "округ Шувалово-Озерки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181033": {
+      "name": "округ Сергиевское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181047": {
+      "name": "округ Гражданка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181900": {
+      "name": "округ Пискарёвка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181901": {
+      "name": "округ Прометей",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181902": {
+      "name": "округ Академическое",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181903": {
+      "name": "Финляндский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181904": {
+      "name": "округ Северный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181905": {
+      "name": "округ № 21",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181946": {
+      "name": "округ Княжево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1184644": {
+      "name": "округ Ульянка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1184645": {
+      "name": "округ Дачное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1184646": {
+      "name": "округ Автово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185365": {
+      "name": "округ Морские ворота",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185366": {
+      "name": "округ Красненькая речка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185367": {
+      "name": "Нарвский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185380": {
+      "name": "округ Полюстрово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185381": {
+      "name": "округ Малая Охта",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185382": {
+      "name": "округ Ржевка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185383": {
+      "name": "округ Большая Охта",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185384": {
+      "name": "округ Пороховые",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1185387": {
+      "name": "Кронштадт",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1185394": {
+      "name": "округ Гагаринское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1186033": {
+      "name": "Красносельское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1186630": {
+      "name": "округ Новоизмайловское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187186": {
+      "name": "округ Звёздное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187265": {
+      "name": "округ Пулковский меридиан",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187391": {
+      "name": "Посадский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187392": {
+      "name": "округ Чкаловское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187393": {
+      "name": "округ Кронверкское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187394": {
+      "name": "Введенский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187395": {
+      "name": "округ Аптекарский остров",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1187396": {
+      "name": "Петровский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197806": {
+      "name": "округ Волковское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197807": {
+      "name": "округ Купчино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197808": {
+      "name": "Александровский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197809": {
+      "name": "Балканский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197810": {
+      "name": "Георгиевский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1197811": {
+      "name": "Николаевский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198054": {
+      "name": "округ Смольнинское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198055": {
+      "name": "Дворцовый округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198056": {
+      "name": "округ Лиговка-Ямская",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198057": {
+      "name": "Владимирский округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198058": {
+      "name": "Литейный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198059": {
+      "name": "округ № 78",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198679": {
+      "name": "округ Озеро Долгое",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198680": {
+      "name": "округ № 65",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1198683": {
+      "name": "округ Комендантский аэродром",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1201772": {
+      "name": "округ Ланское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1205244": {
+      "name": "Лисий Нос",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "1205319": {
+      "name": "округ Лахта-Ольгино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1205337": {
+      "name": "округ Юнтолово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1205339": {
+      "name": "округ Коломяги",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1306580": {
+      "name": "Город Всеволожск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1399999": {
+      "name": "Глажевское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1400000": {
+      "name": "Киришское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412101": {
+      "name": "Сабское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412208": {
+      "name": "Рабитицкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412209": {
+      "name": "Волосовское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412212": {
+      "name": "Калитинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412213": {
+      "name": "Большеврудское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412278": {
+      "name": "Клопицкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1412279": {
+      "name": "Бегуницкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1468102": {
+      "name": "Сосновское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1468106": {
+      "name": "Раздольевское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1468109": {
+      "name": "Запорожское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1468110": {
+      "name": "Красноозёрное сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1559866": {
+      "name": "Шапкинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1559867": {
+      "name": "Трубникоборское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1559868": {
+      "name": "Нурминское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1559869": {
+      "name": "Любанское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1559871": {
+      "name": "Рябовское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560744": {
+      "name": "Сертоловское городское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "1560851": {
+      "name": "Лисинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560852": {
+      "name": "Красноборское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560853": {
+      "name": "Фёдоровское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560854": {
+      "name": "Ульяновское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560855": {
+      "name": "Тельмановское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1560856": {
+      "name": "Никольское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1560857": {
+      "name": "Форносовское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1561794": {
+      "name": "Тосненское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1570684": {
+      "name": "Заневское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1570741": {
+      "name": "Новодевяткинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1570952": {
+      "name": "Горбунковское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1570953": {
+      "name": "Аннинское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1591458": {
+      "name": "Усть-Лужское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1591459": {
+      "name": "Котельское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1591461": {
+      "name": "Опольевское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1591465": {
+      "name": "Пустомержское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1591467": {
+      "name": "Нежновское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1591474": {
+      "name": "Фалилеевское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650671": {
+      "name": "Ропшинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650672": {
+      "name": "Лопухинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650673": {
+      "name": "Большеижорское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650674": {
+      "name": "Оржицкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650675": {
+      "name": "Кипенское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650676": {
+      "name": "Лаголовское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1650677": {
+      "name": "Гостилицкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650678": {
+      "name": "Пениковское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650680": {
+      "name": "Русско-Высоцкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650681": {
+      "name": "Лебяженское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650682": {
+      "name": "Копорское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1650937": {
+      "name": "Мшинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1661789": {
+      "name": "Кузьмоловское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1663038": {
+      "name": "Бугровское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1663039": {
+      "name": "Куйвозовское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1663040": {
+      "name": "Лесколовское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1664810": {
+      "name": "Дубровское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1664811": {
+      "name": "Колтушское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1664812": {
+      "name": "Морозовское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1664813": {
+      "name": "Муринское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1664815": {
+      "name": "Рахьинское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1664816": {
+      "name": "Романовское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1664817": {
+      "name": "Свердловское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1664818": {
+      "name": "Щегловское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1703911": {
+      "name": "Кировское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1714931": {
+      "name": "Старопольское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1724255": {
+      "name": "Кисельнинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1724256": {
+      "name": "Новоладожское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767160": {
+      "name": "Мгинское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767161": {
+      "name": "Назиевское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767162": {
+      "name": "Павловское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767163": {
+      "name": "Приладожское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767164": {
+      "name": "Путиловское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767165": {
+      "name": "Синявинское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767166": {
+      "name": "Суховское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767167": {
+      "name": "Шлиссельбургское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1767168": {
+      "name": "Шумское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "356826-1": {
+      "name": "Шушары",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "356826-2": {
+      "name": "Шушары",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "391526-1-1": {
+      "name": "Советское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "391526-1-2-1": {
+      "name": "Советское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "391526-1-2-2": {
+      "name": "Советское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "391526-2": {
+      "name": "Советское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1181031-1": {
+      "name": "Парголово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1181031-2": {
+      "name": "Парголово",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "1186033-1": {
+      "name": "Красносельское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1186033-2": {
+      "name": "Красносельское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1186033-3": {
+      "name": "Красносельское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1400002-1": {
+      "name": "Кусинское сельское поселение",
+      "productionCoefficient": 1.25,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1400002-2": {
+      "name": "Кусинское сельское поселение",
+      "productionCoefficient": 1.3,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1468110-1": {
+      "name": "Красноозёрное сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1468110-2": {
+      "name": "Красноозёрное сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1570605-1": {
+      "name": "Низинское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "1570605-2": {
+      "name": "Низинское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1570867-1": {
+      "name": "Агалатовское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1570867-2": {
+      "name": "Агалатовское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "1650679-1": {
+      "name": "Виллозское городское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "1650679-2": {
+      "name": "Виллозское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": true
+    },
+    "1650679-3": {
+      "name": "Виллозское городское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "1663041-1": {
+      "name": "Токсовское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "1663041-2": {
+      "name": "Токсовское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "1663042-1": {
+      "name": "Юкковское сельское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "1663042-2": {
+      "name": "Юкковское сельское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "gatchina-01": {
+      "name": "Пудомягское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-02": {
+      "name": "Войсковицкое сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-03": {
+      "name": "Гатчинское городское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "gatchina-04": {
+      "name": "Кобринское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-05": {
+      "name": "Новосветское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-06": {
+      "name": "Сиверское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-07": {
+      "name": "Коммунарское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-08": {
+      "name": "Таицкое городское поселение",
+      "productionCoefficient": 1.1,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "gatchina-09": {
+      "name": "Веревское сельское поселение",
+      "productionCoefficient": 1.2,
+      "minEstimate": 500000,
+      "worksEnabled": false
+    },
+    "gatchina-10": {
+      "name": "Большеколпанское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-11": {
+      "name": "Вырицкое городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-12": {
+      "name": "Дружногорское городское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-13": {
+      "name": "Сяськелевское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-14": {
+      "name": "Пудостьское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-15": {
+      "name": "Сусанинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-16": {
+      "name": "Рождественское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "gatchina-17": {
+      "name": "Елизаветинское сельское поселение",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "sosnovy-bor-01": {
+      "name": "Сосновоборский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-226927": {
+      "name": "район Кунцево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-240229": {
+      "name": "район Крылатское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-364001": {
+      "name": "Мещанский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-364551": {
+      "name": "район Сокольники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-380704": {
+      "name": "район Коммунарка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-380705": {
+      "name": "Филимонковский район",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-380708": {
+      "name": "район Внуково",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-428431": {
+      "name": "район Хорошёво-Мнёвники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-431464": {
+      "name": "район Щукино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-434560": {
+      "name": "район Строгино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-442733": {
+      "name": "район Митино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-442741": {
+      "name": "район Куркино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-444812": {
+      "name": "район Кузьминки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-444908": {
+      "name": "Донской район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445273": {
+      "name": "район Левобережный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445274": {
+      "name": "район Ховрино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445275": {
+      "name": "район Западное Дегунино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445276": {
+      "name": "Тимирязевский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445277": {
+      "name": "район Коптево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445278": {
+      "name": "Дмитровский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445279": {
+      "name": "район Северное Тушино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445280": {
+      "name": "район Сокол",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445281": {
+      "name": "Савёловский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445282": {
+      "name": "район Отрадное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445283": {
+      "name": "Молжаниновский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445284": {
+      "name": "район Северный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445285": {
+      "name": "район Восточное Дегунино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445297": {
+      "name": "Головинский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445298": {
+      "name": "район Беговой",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-445299": {
+      "name": "Хорошёвский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446078": {
+      "name": "Войковский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446079": {
+      "name": "район Аэропорт",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446080": {
+      "name": "район Южное Тушино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446081": {
+      "name": "район Покровское-Стрешнево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446082": {
+      "name": "Бескудниковский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446083": {
+      "name": "Алтуфьевский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446084": {
+      "name": "район Лианозово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446085": {
+      "name": "район Бибирево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446086": {
+      "name": "район Северное Медведково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446087": {
+      "name": "район Южное Медведково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446111": {
+      "name": "район Фили-Давыдково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446112": {
+      "name": "район Филёвский Парк",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446114": {
+      "name": "район Дорогомилово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446115": {
+      "name": "район Раменки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446116": {
+      "name": "район Солнцево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446117": {
+      "name": "Ново-Переделкино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446271": {
+      "name": "Ярославский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-446272": {
+      "name": "район Ростокино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455184": {
+      "name": "район Текстильщики",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455203": {
+      "name": "район Люблино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455208": {
+      "name": "район Капотня",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455222": {
+      "name": "район Марьино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455451": {
+      "name": "район Печатники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455460": {
+      "name": "район Нагатинский Затон",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455528": {
+      "name": "район Москворечье-Сабурово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-455539": {
+      "name": "район Орехово-Борисово Северное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-456807": {
+      "name": "Орехово-Борисово Южное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-531264": {
+      "name": "район Зябликово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-531287": {
+      "name": "район Братеево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-535655": {
+      "name": "район Нагатино-Садовники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-535662": {
+      "name": "Нагорный район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-535680": {
+      "name": "район Чертаново Северное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-548619": {
+      "name": "район Выхино-Жулебино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-574667": {
+      "name": "район Вешняки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-950639": {
+      "name": "район Бирюлёво Восточное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-950641": {
+      "name": "район Царицыно",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-950658": {
+      "name": "район Бирюлёво Западное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-950664": {
+      "name": "район Чертаново Южное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-951305": {
+      "name": "район Чертаново Центральное",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-951334": {
+      "name": "район Ясенево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-951336": {
+      "name": "район Тёплый Стан",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-952191": {
+      "name": "район Коньково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1250526": {
+      "name": "Алексеевский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1250618": {
+      "name": "район Свиблово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1250619": {
+      "name": "Останкинский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1250724": {
+      "name": "район Марфино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1252407": {
+      "name": "район Марьина Роща",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1252424": {
+      "name": "Бутырский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1252448": {
+      "name": "Лосиноостровский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1252465": {
+      "name": "Бабушкинский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255563": {
+      "name": "Рязанский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255576": {
+      "name": "район Косино-Ухтомский",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255577": {
+      "name": "район Некрасовка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255602": {
+      "name": "район Новокосино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255680": {
+      "name": "район Северное Измайлово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255704": {
+      "name": "район Восточное Измайлово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255775": {
+      "name": "район Восточный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255942": {
+      "name": "район Замоскворечье",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1255987": {
+      "name": "район Хамовники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257218": {
+      "name": "Красносельский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257403": {
+      "name": "район Южное Бутово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257455": {
+      "name": "район Северное Бутово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257472": {
+      "name": "Можайский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257484": {
+      "name": "район Арбат",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1257786": {
+      "name": "Тверской район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1275551": {
+      "name": "Пресненский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1275608": {
+      "name": "Таганский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1275627": {
+      "name": "район Якиманка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1278046": {
+      "name": "Нижегородский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1278064": {
+      "name": "район Лефортово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1278096": {
+      "name": "Южнопортовый район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1281209": {
+      "name": "Даниловский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1281220": {
+      "name": "Академический район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1281263": {
+      "name": "район Черёмушки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1281648": {
+      "name": "Гагаринский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1281702": {
+      "name": "Ломоносовский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292211": {
+      "name": "район Котловка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292286": {
+      "name": "район Зюзино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292499": {
+      "name": "Обручевский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292679": {
+      "name": "район Проспект Вернадского",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292731": {
+      "name": "Тропарёво-Никулино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1292749": {
+      "name": "район Очаково-Матвеевское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1298976": {
+      "name": "район Новогиреево",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1299013": {
+      "name": "район Перово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1299031": {
+      "name": "район Соколиная Гора",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1299106": {
+      "name": "район Преображенское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1319060": {
+      "name": "район Богородское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1319078": {
+      "name": "район Метрогородок",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1319142": {
+      "name": "район Гольяново",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1319245": {
+      "name": "район Измайлово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1319263": {
+      "name": "район Ивановское",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1320371": {
+      "name": "район Крюково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1320424": {
+      "name": "район Старое Крюково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1320510": {
+      "name": "район Силино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1320566": {
+      "name": "район Матушкино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1320570": {
+      "name": "район Савёлки",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-1693596": {
+      "name": "район Бекасово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-1703093": {
+      "name": "район Троицк",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-1703095": {
+      "name": "район Щербинка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-2092922": {
+      "name": "район Вороново",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-2092925": {
+      "name": "Краснопахорский район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-2162195": {
+      "name": "Басманный район",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "msk-21228792": {
+      "name": "Поповка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-171922": {
+      "name": "Сергиево-Посадский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-173406": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.15,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-173763": {
+      "name": "Дмитровский муниципальный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179494": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179588": {
+      "name": "городской округ Щёлково",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179629": {
+      "name": "Богородский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179639": {
+      "name": "Павлово-Посадский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-180621": {
+      "name": "Раменский муниципальный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-180838": {
+      "name": "городской округ Солнечногорск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181165": {
+      "name": "муниципальный округ Чехов",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181189": {
+      "name": "городской округ Подольск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181290": {
+      "name": "Ленинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-181345": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-181346": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-181355": {
+      "name": "городской округ Краснознаменск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-184001": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184002": {
+      "name": "городской округ Люберцы",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-184071": {
+      "name": "городской округ Клин",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184072": {
+      "name": "муниципальный округ Истра",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184106": {
+      "name": "городской округ Реутов",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-184108": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-184744": {
+      "name": "Наро-Фоминский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184746": {
+      "name": "городской округ Лосино-Петровский",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184751": {
+      "name": "городской округ Молодёжный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-186462": {
+      "name": "городской округ Черноголовка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-186463": {
+      "name": "городской округ Ступино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-189473": {
+      "name": "городской округ Жуковский",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-389661": {
+      "name": "Александровский муниципальный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-405900": {
+      "name": "Боровский муниципальный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-974560": {
+      "name": "городской округ Фрязино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-1026233": {
+      "name": "городской округ Воскресенск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-1028434": {
+      "name": "городской округ Котельники",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1644065": {
+      "name": "городской округ Власиха",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703082": {
+      "name": "городской округ Долгопрудный",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703084": {
+      "name": "городской округ Звёздный городок",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-1703085": {
+      "name": "городской округ Бронницы",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-1703090": {
+      "name": "городской округ Королёв",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703091": {
+      "name": "городской округ Лобня",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703092": {
+      "name": "городской округ Лыткарино",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703094": {
+      "name": "городской округ Химки",
+      "productionCoefficient": 1.1,
+      "minEstimate": 300000,
+      "worksEnabled": true
+    },
+    "mo-1703097": {
+      "name": "городской округ Электросталь",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    }
+  }
+}
