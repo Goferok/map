@@ -135,8 +135,7 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import maplibregl from 'maplibre-gl';
 
 const MUNICIPALITY_MAP_DATA_URL = `${import.meta.env.BASE_URL}data/municipality-map-data.json`;
-const MOSCOW_DISTRICTS_URL = `${import.meta.env.BASE_URL}data/moscow-districts.geojson`;
-const MOSCOW_OBLAST_DISTRICTS_URL = `${import.meta.env.BASE_URL}data/moscow-oblast-districts.geojson`;
+const MOSCOW_BOUNDARIES_URL = `${import.meta.env.BASE_URL}data/moscow-boundaries.geojson`;
 const DEFAULT_SETTINGS_URL = `${import.meta.env.BASE_URL}data/default-municipality-settings.json`;
 const DEFAULT_COEFFICIENT = 1;
 const DEFAULT_MIN_ESTIMATE = 300000;
@@ -312,10 +311,9 @@ async function loadSettings() {
 
 async function loadSharedMapData() {
   try {
-    const [response, moscowGeojson, moscowOblastGeojson, defaultSettings] = await Promise.all([
+    const [response, moscowGeojson, defaultSettings] = await Promise.all([
       fetch(MUNICIPALITY_MAP_DATA_URL, { cache: 'no-store' }),
-      loadGeojson(MOSCOW_DISTRICTS_URL, 'msk'),
-      loadGeojson(MOSCOW_OBLAST_DISTRICTS_URL, 'mo'),
+      loadMoscowBoundaries(),
       loadDefaultSettings()
     ]);
     if (!response.ok) throw new Error(`municipality-map-data.json не найден: ${response.status}`);
@@ -327,8 +325,7 @@ async function loadSharedMapData() {
       type: 'FeatureCollection',
       features: [
         ...(payload.geojson.features || []),
-        ...moscowGeojson.features,
-        ...moscowOblastGeojson.features
+        ...moscowGeojson.features
       ]
     });
     return {
@@ -351,25 +348,71 @@ async function loadDefaultSettings() {
   return payload?.settings || payload || {};
 }
 
-async function loadGeojson(url, region) {
-  const response = await fetch(url, { cache: 'no-store' });
-  if (!response.ok) throw new Error(`${url} не найден: ${response.status}`);
+async function loadMoscowBoundaries() {
+  const response = await fetch(MOSCOW_BOUNDARIES_URL, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`${MOSCOW_BOUNDARIES_URL} не найден: ${response.status}`);
   const geojson = await response.json();
-  if (geojson?.type !== 'FeatureCollection') throw new Error(`${url} содержит неверный формат`);
+  if (geojson?.type !== 'FeatureCollection') throw new Error(`${MOSCOW_BOUNDARIES_URL} содержит неверный формат`);
   return {
     ...geojson,
-    features: (geojson.features || []).map((feature) => withRegion(feature, region))
+    features: prepareMoscowBoundaryParts(geojson.features || [])
   };
 }
 
-function withRegion(feature, region) {
-  return {
-    ...feature,
-    properties: {
-      ...(feature.properties || {}),
-      _mapRegion: region
-    }
-  };
+function prepareMoscowBoundaryParts(features) {
+  const totalParts = new Map();
+  features.forEach((feature) => {
+    const osmId = String(feature.properties?.OSM_ID || feature.id || '');
+    if (osmId) totalParts.set(osmId, (totalParts.get(osmId) || 0) + 1);
+  });
+
+  const partNumbers = new Map();
+  return features.flatMap((feature) => {
+    const osmId = String(feature.properties?.OSM_ID || feature.id || '');
+    if (!osmId || !feature.geometry) return [];
+    const region = getMoscowBoundaryRegion(osmId, feature.properties);
+    const parentMapId = `${region}-${osmId}`;
+    const partNumber = (partNumbers.get(osmId) || 0) + 1;
+    partNumbers.set(osmId, partNumber);
+    const sourceCoordinates = feature.geometry.type === 'Polygon'
+      ? [feature.geometry.coordinates]
+      : feature.geometry.coordinates;
+    const coordinates = convertWebMercatorToLngLat(sourceCoordinates);
+
+    const mapId = totalParts.get(osmId) > 1
+      ? `${parentMapId}-part-${partNumber}`
+      : parentMapId;
+    return [{
+      ...feature,
+      geometry: {
+        type: 'MultiPolygon',
+        coordinates
+      },
+      properties: {
+        ...(feature.properties || {}),
+        _mapRegion: region,
+        _mapId: mapId,
+        _parentMapId: parentMapId
+      }
+    }];
+  });
+}
+
+function convertWebMercatorToLngLat(coordinates) {
+  if (!Array.isArray(coordinates)) return coordinates;
+  if (coordinates.length >= 2 && typeof coordinates[0] === 'number' && typeof coordinates[1] === 'number') {
+    const [x, y, ...rest] = coordinates;
+    const lng = x * 180 / 20037508.34;
+    const lat = 180 / Math.PI * (2 * Math.atan(Math.exp(y * Math.PI / 20037508.34)) - Math.PI / 2);
+    return [lng, lat, ...rest];
+  }
+  return coordinates.map(convertWebMercatorToLngLat);
+}
+
+function getMoscowBoundaryRegion(osmId, properties = {}) {
+  // Поповка раньше была в московском слое; этот ключ уже есть в сохранённых настройках.
+  if (osmId === '21228792') return 'msk';
+  return properties.ADMIN_L4 === 'Москва' ? 'msk' : 'mo';
 }
 function ensureFeatureIds(geojson) {
   return {
@@ -395,7 +438,10 @@ function ensureDefaultSettings() {
   (municipalities.value?.features || []).forEach((feature) => {
     const id = feature.properties._mapId;
     if (next[id]) return;
-    next[id] = getDefaultSettings(getMunicipalityName(feature.properties));
+    const inherited = next[feature.properties._parentMapId];
+    next[id] = inherited
+      ? { ...inherited, name: getMunicipalityName(feature.properties) }
+      : getDefaultSettings(getMunicipalityName(feature.properties));
     changed = true;
   });
   if (changed) {
@@ -697,6 +743,7 @@ function getDefaultSettings(name = '') {
 
 function getMunicipalityId(feature, index) {
   const properties = feature.properties || {};
+  if (properties._mapId) return String(properties._mapId);
   if (properties._mapRegion) {
     return `${properties._mapRegion}-${properties.OSM_ID || properties.OSM_IDD || feature.id || index + 1}`;
   }
