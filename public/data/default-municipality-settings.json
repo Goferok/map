@@ -1,7 +1,7 @@
 {
   "schema": "production-municipality-map-data",
   "version": 1,
-  "exportedAt": "2026-09-01T18:30:51.491Z",
+  "exportedAt": "2026-09-25T09:20:15.472Z",
   "settings": {
     "337423": {
       "name": "Колпино",
@@ -1415,170 +1415,170 @@
     },
     "msk-226927": {
       "name": "район Кунцево",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-240229": {
       "name": "район Крылатское",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-364001": {
       "name": "Мещанский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-364551": {
       "name": "район Сокольники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-380704": {
       "name": "район Коммунарка",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-380705": {
       "name": "Филимонковский район",
       "productionCoefficient": 1.2,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-380708": {
       "name": "район Внуково",
       "productionCoefficient": 1.2,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-428431": {
       "name": "район Хорошёво-Мнёвники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-431464": {
       "name": "район Щукино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-434560": {
       "name": "район Строгино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-442733": {
       "name": "район Митино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-442741": {
       "name": "район Куркино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-444812": {
       "name": "район Кузьминки",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-444908": {
       "name": "Донской район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445273": {
       "name": "район Левобережный",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445274": {
       "name": "район Ховрино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445275": {
       "name": "район Западное Дегунино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445276": {
       "name": "Тимирязевский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445277": {
       "name": "район Коптево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445278": {
       "name": "Дмитровский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445279": {
       "name": "район Северное Тушино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445280": {
       "name": "район Сокол",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445281": {
       "name": "Савёловский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445282": {
       "name": "район Отрадное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445283": {
       "name": "Молжаниновский район",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-445284": {
       "name": "район Северный",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-445285": {
       "name": "район Восточное Дегунино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445297": {
       "name": "Головинский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-445298": {
@@ -1590,13 +1590,13 @@
     "msk-445299": {
       "name": "Хорошёвский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446078": {
       "name": "Войковский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446079": {
@@ -1608,73 +1608,73 @@
     "msk-446080": {
       "name": "район Южное Тушино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446081": {
       "name": "район Покровское-Стрешнево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446082": {
       "name": "Бескудниковский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446083": {
       "name": "Алтуфьевский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446084": {
       "name": "район Лианозово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446085": {
       "name": "район Бибирево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446086": {
       "name": "район Северное Медведково",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446087": {
       "name": "район Южное Медведково",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446111": {
       "name": "район Фили-Давыдково",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446112": {
       "name": "район Филёвский Парк",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446114": {
       "name": "район Дорогомилово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446115": {
       "name": "район Раменки",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446116": {
@@ -1686,19 +1686,19 @@
     "msk-446117": {
       "name": "Ново-Переделкино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446271": {
       "name": "Ярославский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-446272": {
       "name": "район Ростокино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455184": {
@@ -1710,37 +1710,37 @@
     "msk-455203": {
       "name": "район Люблино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455208": {
       "name": "район Капотня",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455222": {
       "name": "район Марьино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455451": {
       "name": "район Печатники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455460": {
       "name": "район Нагатинский Затон",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455528": {
       "name": "район Москворечье-Сабурово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-455539": {
@@ -1752,55 +1752,55 @@
     "msk-456807": {
       "name": "Орехово-Борисово Южное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-531264": {
       "name": "район Зябликово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-531287": {
       "name": "район Братеево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-535655": {
       "name": "район Нагатино-Садовники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-535662": {
       "name": "Нагорный район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-535680": {
       "name": "район Чертаново Северное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-548619": {
       "name": "район Выхино-Жулебино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-574667": {
       "name": "район Вешняки",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-950639": {
       "name": "район Бирюлёво Восточное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-950641": {
@@ -1812,205 +1812,205 @@
     "msk-950658": {
       "name": "район Бирюлёво Западное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-950664": {
       "name": "район Чертаново Южное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-951305": {
       "name": "район Чертаново Центральное",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-951334": {
       "name": "район Ясенево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-951336": {
       "name": "район Тёплый Стан",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-952191": {
       "name": "район Коньково",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1250526": {
       "name": "Алексеевский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1250618": {
       "name": "район Свиблово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1250619": {
       "name": "Останкинский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1250724": {
       "name": "район Марфино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1252407": {
       "name": "район Марьина Роща",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1252424": {
       "name": "Бутырский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1252448": {
       "name": "Лосиноостровский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1252465": {
       "name": "Бабушкинский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1255563": {
       "name": "Рязанский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1255576": {
       "name": "район Косино-Ухтомский",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1255577": {
       "name": "район Некрасовка",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1255602": {
       "name": "район Новокосино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1255680": {
       "name": "район Северное Измайлово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1255704": {
       "name": "район Восточное Измайлово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1255775": {
       "name": "район Восточный",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1255942": {
       "name": "район Замоскворечье",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1255987": {
       "name": "район Хамовники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257218": {
       "name": "Красносельский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257403": {
       "name": "район Южное Бутово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257455": {
       "name": "район Северное Бутово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257472": {
       "name": "Можайский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257484": {
       "name": "район Арбат",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1257786": {
       "name": "Тверской район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1275551": {
       "name": "Пресненский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1275608": {
       "name": "Таганский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1275627": {
       "name": "район Якиманка",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1278046": {
       "name": "Нижегородский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1278064": {
       "name": "район Лефортово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1278096": {
@@ -2022,121 +2022,121 @@
     "msk-1281209": {
       "name": "Даниловский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1281220": {
       "name": "Академический район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1281263": {
       "name": "район Черёмушки",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1281648": {
       "name": "Гагаринский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1281702": {
       "name": "Ломоносовский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292211": {
       "name": "район Котловка",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292286": {
       "name": "район Зюзино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292499": {
       "name": "Обручевский район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292679": {
       "name": "район Проспект Вернадского",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292731": {
       "name": "Тропарёво-Никулино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1292749": {
       "name": "район Очаково-Матвеевское",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1298976": {
       "name": "район Новогиреево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1299013": {
       "name": "район Перово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1299031": {
       "name": "район Соколиная Гора",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1299106": {
       "name": "район Преображенское",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1319060": {
       "name": "район Богородское",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1319078": {
       "name": "район Метрогородок",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1319142": {
       "name": "район Гольяново",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1319245": {
       "name": "район Измайлово",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1319263": {
       "name": "район Ивановское",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-1320371": {
@@ -2177,15 +2177,15 @@
     },
     "msk-1703093": {
       "name": "район Троицк",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
-      "worksEnabled": false
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "msk-1703095": {
       "name": "район Щербинка",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
-      "worksEnabled": false
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "msk-2092922": {
       "name": "район Вороново",
@@ -2202,7 +2202,7 @@
     "msk-2162195": {
       "name": "Басманный район",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "msk-21228792": {
@@ -2220,7 +2220,7 @@
     "mo-173406": {
       "name": "городской округ Мытищи",
       "productionCoefficient": 1.15,
-      "minEstimate": 300000,
+      "minEstimate": 320000,
       "worksEnabled": true
     },
     "mo-173763": {
@@ -2280,7 +2280,7 @@
     "mo-181290": {
       "name": "Ленинский городской округ",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-181345": {
@@ -2292,7 +2292,7 @@
     "mo-181346": {
       "name": "Одинцовский городской округ",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "mo-181355": {
@@ -2310,7 +2310,7 @@
     "mo-184002": {
       "name": "городской округ Люберцы",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "mo-184071": {
@@ -2328,13 +2328,13 @@
     "mo-184106": {
       "name": "городской округ Реутов",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-184108": {
       "name": "городской округ Балашиха",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 400000,
       "worksEnabled": true
     },
     "mo-184744": {
@@ -2369,9 +2369,9 @@
     },
     "mo-189473": {
       "name": "городской округ Жуковский",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
-      "worksEnabled": false
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "mo-389661": {
       "name": "Александровский муниципальный округ",
@@ -2400,7 +2400,7 @@
     "mo-1028434": {
       "name": "городской округ Котельники",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1644065": {
@@ -2429,26 +2429,26 @@
     },
     "mo-1703090": {
       "name": "городской округ Королёв",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1703091": {
       "name": "городской округ Лобня",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1703092": {
       "name": "городской округ Лыткарино",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1703094": {
       "name": "городской округ Химки",
-      "productionCoefficient": 1.1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1703097": {
@@ -2456,6 +2456,426 @@
       "productionCoefficient": 1,
       "minEstimate": 300000,
       "worksEnabled": false
+    },
+    "mo-173406-part-1": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.3,
+      "minEstimate": 450000,
+      "worksEnabled": false
+    },
+    "mo-179494-part-1": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-180621-part-1": {
+      "name": "Раменский муниципальный округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-180838-part-1": {
+      "name": "городской округ Солнечногорск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181189-part-1": {
+      "name": "городской округ Подольск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181345-part-1": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181346-part-1": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-184001-part-1": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184002-part-1": {
+      "name": "городской округ Люберцы",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184108-part-1": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1.3,
+      "minEstimate": 450000,
+      "worksEnabled": false
+    },
+    "mo-184744-part-1": {
+      "name": "Наро-Фоминский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-1703082-part-1": {
+      "name": "городской округ Долгопрудный",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "msk-380705-part-1": {
+      "name": "Филимонковский район",
+      "productionCoefficient": 1.2,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-380708-part-1": {
+      "name": "район Внуково",
+      "productionCoefficient": 1.2,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-2": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-3": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-1703082-part-2": {
+      "name": "городской округ Долгопрудный",
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-4": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-5": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-6": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.3,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-7": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.15,
+      "minEstimate": 320000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-8": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-9": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.15,
+      "minEstimate": 320000,
+      "worksEnabled": true
+    },
+    "mo-179494-part-2": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179494-part-3": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-179494-part-4": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-179494-part-5": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179494-part-6": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-179494-part-7": {
+      "name": "Пушкинский городской округ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-10": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-11": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-12": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-13": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-173406-part-14": {
+      "name": "городской округ Мытищи",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-180838-part-2": {
+      "name": "городской округ Солнечногорск",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-181345-part-2": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-3": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-4": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-5": {
+      "name": "Оплаиха",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-6": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-7": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-8": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-9": {
+      "name": "Ильинское-Усово",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-10": {
+      "name": "Ильинское",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-11": {
+      "name": "Александровка ( Петровский ) ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181346-part-2": {
+      "name": "Ромашково",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-181346-part-3": {
+      "name": "Немчиновка",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-181346-part-4": {
+      "name": "Одинцово",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-380708-part-2": {
+      "name": "район Внуково",
+      "productionCoefficient": 1.2,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-184744-part-2": {
+      "name": "Апрелевка",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "msk-380705-part-2": {
+      "name": "Филимонковский район",
+      "productionCoefficient": 1.2,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-380705-part-3": {
+      "name": "Филимонковский район",
+      "productionCoefficient": 1.2,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "mo-181189-part-2": {
+      "name": "городской округ Подольск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181189-part-3": {
+      "name": "городской округ Подольск",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181189-part-4": {
+      "name": "городской округ Подольск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-180621-part-2": {
+      "name": "Раменское ",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184001-part-2": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184001-part-3": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-184001-part-4": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184001-part-5": {
+      "name": "городской округ Домодедово",
+      "productionCoefficient": 1,
+      "minEstimate": 300000,
+      "worksEnabled": false
+    },
+    "mo-180621-part-3": {
+      "name": "Раменский муниципальный округ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-180621-part-4": {
+      "name": "Раменский муниципальный округ",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184002-part-2": {
+      "name": "городской округ Люберцы",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184002-part-3": {
+      "name": "городской округ Люберцы",
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184002-part-4": {
+      "name": "городской округ Люберцы",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184108-part-2": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184108-part-3": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-184108-part-4": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184108-part-5": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-184108-part-6": {
+      "name": "городской округ Балашиха",
+      "productionCoefficient": 1,
+      "minEstimate": 450000,
+      "worksEnabled": true
     }
   }
 }
