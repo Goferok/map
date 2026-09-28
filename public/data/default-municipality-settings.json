@@ -1,7 +1,7 @@
 {
   "schema": "production-municipality-map-data",
   "version": 1,
-  "exportedAt": "2026-09-25T09:20:15.472Z",
+  "exportedAt": "2026-09-28T11:00:29.340Z",
   "settings": {
     "337423": {
       "name": "Колпино",
@@ -1680,13 +1680,13 @@
     "msk-446116": {
       "name": "район Солнцево",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-446117": {
       "name": "Ново-Переделкино",
       "productionCoefficient": 1,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-446271": {
@@ -2251,7 +2251,7 @@
       "name": "Павлово-Посадский городской округ",
       "productionCoefficient": 1,
       "minEstimate": 300000,
-      "worksEnabled": true
+      "worksEnabled": false
     },
     "mo-180621": {
       "name": "Раменский муниципальный округ",
@@ -2299,7 +2299,7 @@
       "name": "городской округ Краснознаменск",
       "productionCoefficient": 1,
       "minEstimate": 300000,
-      "worksEnabled": true
+      "worksEnabled": false
     },
     "mo-184001": {
       "name": "городской округ Домодедово",
@@ -2497,7 +2497,7 @@
       "name": "Одинцовский городской округ",
       "productionCoefficient": 1,
       "minEstimate": 400000,
-      "worksEnabled": true
+      "worksEnabled": false
     },
     "mo-184001-part-1": {
       "name": "городской округ Домодедово",
@@ -2742,7 +2742,7 @@
     "mo-181346-part-4": {
       "name": "Одинцово",
       "productionCoefficient": 1,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-380708-part-2": {
@@ -2754,8 +2754,8 @@
     "mo-184744-part-2": {
       "name": "Апрелевка",
       "productionCoefficient": 1,
-      "minEstimate": 300000,
-      "worksEnabled": false
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "msk-380705-part-2": {
       "name": "Филимонковский район",
@@ -2875,6 +2875,84 @@
       "name": "городской округ Балашиха",
       "productionCoefficient": 1,
       "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181345-part-12": {
+      "name": "городской округ Красногорск",
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "mo-181346-part-5": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-6": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-7": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-8": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-9": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-10": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-11": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-12": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "mo-181346-part-13": {
+      "name": "Одинцовский городской округ",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": false
+    },
+    "msk-1257472-part-1": {
+      "name": "Можайский район",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-1257472-part-2": {
+      "name": "Можайский район",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-1257472-part-3": {
+      "name": "Можайский район",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
       "worksEnabled": true
     }
   }
