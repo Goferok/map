@@ -1,7 +1,7 @@
 {
   "schema": "production-municipality-map-data",
   "version": 1,
-  "exportedAt": "2026-09-28T11:00:29.340Z",
+  "exportedAt": "2026-09-29T07:27:42.368Z",
   "settings": {
     "337423": {
       "name": "Колпино",
@@ -1559,7 +1559,7 @@
     },
     "msk-445283": {
       "name": "Молжаниновский район",
-      "productionCoefficient": 1.15,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
@@ -1931,7 +1931,7 @@
     },
     "msk-1255775": {
       "name": "район Восточный",
-      "productionCoefficient": 1,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
@@ -2141,32 +2141,32 @@
     },
     "msk-1320371": {
       "name": "район Крюково",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1320424": {
       "name": "район Старое Крюково",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1320510": {
       "name": "район Силино",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1320566": {
       "name": "район Матушкино",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1320570": {
       "name": "район Савёлки",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1693596": {
@@ -2177,13 +2177,13 @@
     },
     "msk-1703093": {
       "name": "район Троицк",
-      "productionCoefficient": 1.15,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-1703095": {
       "name": "район Щербинка",
-      "productionCoefficient": 1.1,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
@@ -2405,8 +2405,8 @@
     },
     "mo-1644065": {
       "name": "городской округ Власиха",
-      "productionCoefficient": 1,
-      "minEstimate": 300000,
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-1703082": {
@@ -2447,7 +2447,7 @@
     },
     "mo-1703094": {
       "name": "городской округ Химки",
-      "productionCoefficient": 1.15,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
@@ -2532,13 +2532,13 @@
     "msk-380705-part-1": {
       "name": "Филимонковский район",
       "productionCoefficient": 1.2,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-380708-part-1": {
       "name": "район Внуково",
       "productionCoefficient": 1.2,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-173406-part-2": {
@@ -2741,32 +2741,32 @@
     },
     "mo-181346-part-4": {
       "name": "Одинцово",
-      "productionCoefficient": 1,
+      "productionCoefficient": 1.15,
       "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-380708-part-2": {
       "name": "район Внуково",
       "productionCoefficient": 1.2,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-184744-part-2": {
       "name": "Апрелевка",
-      "productionCoefficient": 1,
+      "productionCoefficient": 1.3,
       "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-380705-part-2": {
       "name": "Филимонковский район",
       "productionCoefficient": 1.2,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "msk-380705-part-3": {
       "name": "Филимонковский район",
       "productionCoefficient": 1.2,
-      "minEstimate": 400000,
+      "minEstimate": 450000,
       "worksEnabled": true
     },
     "mo-181189-part-2": {
@@ -2849,7 +2849,7 @@
     },
     "mo-184108-part-2": {
       "name": "городской округ Балашиха",
-      "productionCoefficient": 1.15,
+      "productionCoefficient": 1.2,
       "minEstimate": 450000,
       "worksEnabled": true
     },
@@ -2887,43 +2887,43 @@
       "name": "Одинцовский городской округ",
       "productionCoefficient": 1,
       "minEstimate": 400000,
-      "worksEnabled": false
+      "worksEnabled": true
     },
     "mo-181346-part-6": {
       "name": "Одинцовский городской округ",
-      "productionCoefficient": 1,
-      "minEstimate": 400000,
-      "worksEnabled": false
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "mo-181346-part-7": {
       "name": "Одинцовский городской округ",
-      "productionCoefficient": 1,
-      "minEstimate": 400000,
-      "worksEnabled": false
+      "productionCoefficient": 1.2,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "mo-181346-part-8": {
       "name": "Одинцовский городской округ",
       "productionCoefficient": 1,
       "minEstimate": 400000,
-      "worksEnabled": false
+      "worksEnabled": true
     },
     "mo-181346-part-9": {
       "name": "Одинцовский городской округ",
       "productionCoefficient": 1,
       "minEstimate": 400000,
-      "worksEnabled": false
+      "worksEnabled": true
     },
     "mo-181346-part-10": {
       "name": "Одинцовский городской округ",
-      "productionCoefficient": 1,
-      "minEstimate": 400000,
-      "worksEnabled": false
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "mo-181346-part-11": {
       "name": "Одинцовский городской округ",
-      "productionCoefficient": 1,
-      "minEstimate": 400000,
-      "worksEnabled": false
+      "productionCoefficient": 1.1,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "mo-181346-part-12": {
       "name": "Одинцовский городской округ",
@@ -2933,9 +2933,9 @@
     },
     "mo-181346-part-13": {
       "name": "Одинцовский городской округ",
-      "productionCoefficient": 1,
-      "minEstimate": 400000,
-      "worksEnabled": false
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
     },
     "msk-1257472-part-1": {
       "name": "Можайский район",
@@ -2951,6 +2951,36 @@
     },
     "msk-1257472-part-3": {
       "name": "Можайский район",
+      "productionCoefficient": 1,
+      "minEstimate": 400000,
+      "worksEnabled": true
+    },
+    "msk-226927-part-1": {
+      "name": "район Кунцево",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": false
+    },
+    "msk-226927-part-2": {
+      "name": "район Кунцево",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "msk-226927-part-3": {
+      "name": "район Кунцево",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "msk-226927-part-4": {
+      "name": "район Кунцево",
+      "productionCoefficient": 1.15,
+      "minEstimate": 450000,
+      "worksEnabled": true
+    },
+    "msk-226927-part-5": {
+      "name": "район Кунцево",
       "productionCoefficient": 1,
       "minEstimate": 400000,
       "worksEnabled": true
